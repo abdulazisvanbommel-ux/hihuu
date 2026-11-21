@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Someone Special ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="stars"></div>
+
+    <div class="container">
+
+        <div class="heart">❤️</div>
+
+        <h1>For Someone Special</h1>
+
+        <p class="subtitle">
+            A little message from my heart
+        </p>
+
+        <div class="card">
+
+            <h2>Dear You,</h2>
+
+            <p>
+                Jika hidup adalah sebuah bahasa pemrograman,
+                maka kamu adalah baris kode terindah
+                yang tidak pernah ingin aku hapus.
+            </p>
+
+            <p>
+                Aku tidak membutuhkan algoritma untuk
+                menemukan alasan tersenyum,
+                karena kehadiranmu sudah menjadi jawabannya.
+            </p>
+
+            <p>
+                Di antara jutaan kemungkinan,
+                aku bersyukur semesta mempertemukan
+                kita dalam satu cerita.
+            </p>
+
+            <p class="special">
+                "You are not just a part of my story,
+                you are one of the most beautiful reasons
+                why this story is worth reading."
+            </p>
+
+            <h3>With Love ❤️</h3>
+
+        </div>
+
+        <!-- TOMBOL KEJUTAN -->
+
+        <button id="surpriseBtn">
+            Click For A Surprise 💌
+        </button>
+
+        <!-- PESAN KEJUTAN -->
+
+        <div id="surpriseMessage" class="hidden">
+
+            <h2>❤️ A Special Message For You ❤️</h2>
+
+            <p>
+                Dari sekian banyak hal indah di dunia,
+                mengenalmu adalah salah satu hal
+                yang paling ingin aku syukuri.
+            </p>
+
+            <p>
+                Aku tidak tahu bagaimana hari esok,
+                tetapi aku berharap selalu ada cerita
+                indah yang bisa kita kenang.
+            </p>
+
+            <p>
+                Terima kasih sudah menjadi bagian
+                dari cerita yang begitu berharga.
+            </p>
+            <p>
+               MAUKAH KAMU MENJADI PACAR KU,DAN MENJADI RUMAH UNTUK AKU PULANG?
+            </p>
+
+            <h3>You Are Special ❤️</h3>
+
+        </div>
+
+        <footer>
+            Made with ❤️ and a little bit of code
+        </footer>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        const button = document.getElementById("surpriseBtn");
+
+        const message = document.getElementById("surpriseMessage");
+
+        button.addEventListener("click", function() {
+
+            message.classList.toggle("hidden");
+
+            if (message.classList.contains("hidden")) {
+
+                button.innerHTML = "Click For A Surprise 💌";
+
+            } else {
+
+                button.innerHTML = "Close My Message ❤️";
+
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>

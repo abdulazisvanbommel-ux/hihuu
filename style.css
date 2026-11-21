@@ -1,0 +1,230 @@
+
+/* PENGATURAN DASAR */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #080d25,
+        #251333,
+        #461c3d
+    );
+
+    color: white;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 15px;
+    overflow-x: hidden;
+}
+
+
+/* CONTAINER */
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+}
+
+
+/* ANIMASI HATI */
+
+.heart {
+    font-size: 65px;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+/* JUDUL */
+
+h1 {
+    font-size: 36px;
+    color: #ffb6d9;
+    margin: 15px 0;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    color: #d8c2e8;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+
+/* KARTU ROMANTIS */
+
+.card {
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 182, 217, 0.4);
+
+    backdrop-filter: blur(12px);
+
+    border-radius: 20px;
+
+    padding: 35px 25px;
+
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.card h2 {
+    color: #ffb6d9;
+    margin-bottom: 20px;
+}
+
+.card p {
+    line-height: 1.9;
+    margin-bottom: 20px;
+    color: #f4e9f2;
+}
+
+.special {
+    color: #ffb6d9 !important;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.card h3 {
+    color: #ffb6d9;
+    margin-top: 25px;
+}
+
+
+/* TOMBOL */
+
+button {
+    margin-top: 30px;
+
+    padding: 14px 28px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        90deg,
+        #ff75b5,
+        #b56bff
+    );
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+
+    box-shadow: 0 0 20px #ff75b5;
+}
+
+
+/* PESAN KEJUTAN */
+
+.hidden {
+    display: none;
+}
+
+#surpriseMessage {
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    border: 1px solid #ffb6d9;
+
+    border-radius: 18px;
+
+    background: rgba(255, 182, 217, 0.12);
+
+    animation: fadeIn 1s ease;
+}
+
+#surpriseMessage h2 {
+    color: #ffb6d9;
+    margin-bottom: 15px;
+}
+
+#surpriseMessage p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+#surpriseMessage h3 {
+    color: #ffb6d9;
+}
+
+
+/* ANIMASI PESAN */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 35px;
+
+    color: #c7a9d5;
+
+    font-size: 12px;
+}
+
+
+/* RESPONSIVE HP */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .card {
+        padding: 25px 18px;
+    }
+
+    .heart {
+        font-size: 55px;
+    }
+
+}
